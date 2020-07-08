@@ -1,0 +1,12 @@
+{
+  "name": "adapt-authoring-usergroups",
+  "version": "0.0.1",
+  "description": "Module for managing group of users",
+  "homepage": "https://github.com/adapt-security/adapt-authoring-usergroups",
+  "main": "index.js",
+  "peerDependencies": {
+    "adapt-authoring-api": "github:adapt-security/adapt-authoring-api.git",
+    "adapt-authoring-core": "github:adapt-security/adapt-authoring-core.git",
+    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users.git"
+  }
+}
