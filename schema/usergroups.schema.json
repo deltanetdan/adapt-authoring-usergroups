@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "usergroupsext",
+  "description": "Adds user group sharing properties",
+  "type": "object",
+  "$merge": {
+    "with": {
+      "properties": {
+        "userGroups": {
+          "description": "User groups the target object should be accessible to",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "isObjectId": true
+          }
+        }
+      }
+    }
+  }
+}
