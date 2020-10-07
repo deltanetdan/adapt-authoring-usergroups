@@ -1,1 +1,1 @@
-module.exports = require('./lib/userGroupsModule');
+module.exports = require('./lib/UserGroupsModule');
