@@ -3,7 +3,8 @@
   "$anchor": "usergroups",
   "description": "Adds user group sharing properties",
   "type": "object",
-  "$merge": {
+  "$patch": {
+    "source": { "$ref": "user" },
     "with": {
       "properties": {
         "userGroups": {
