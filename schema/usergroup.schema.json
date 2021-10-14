@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$anchor": "usergroup",
-  "description": "An Adapt course build instance",
+  "description": "A group of system users",
   "type": "object",
   "properties": {
     "displayName": {

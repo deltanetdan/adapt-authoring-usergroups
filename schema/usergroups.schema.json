@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$anchor": "usergroups",
-  "description": "Adds user group sharing properties",
+  "description": "Properties related to user group sharing",
   "type": "object",
   "$patch": {
     "source": { "$ref": "user" },
