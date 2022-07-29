@@ -1,0 +1,44 @@
+{{!
+  Important classes for each column
+  ---------------------------------
+  General:
+  - .edit-mode shown when userManagementView is in edit mode
+  - .read/.write elements will be toggled when the edit/cancel buttons are clicked for that column
+  Inputs:
+  - .input must be set on any inputs (input, select etc. -- in the case that the input is just a button/a, set it on that)
+  - data-modelKey must be set on each .input with the corresponding model's key (e.g. _tenantId). This is used to change the model.
+}}
+<div class="inner">
+  <div class="col-row">
+    <div class="col-75">
+      <div class="tb-col-inner">
+        <span class="read no-wrap">{{displayName}}</span>
+        {{#ifGroupNotMe _id}}{{#if isEnabled}}
+          <a class="edit read edit-mode"><i class="fa fa-pencil-square-o"></i></a>
+          <div class="input-container write">
+            <input class="input" type="displayName" data-modelKey="displayName" autocomplete="off">
+            <a class="save"><i class="fa fa-check-square-o"></i></a>
+            <a class="cancel"><i class="fa fa-times"></i></a>
+          </div>
+        {{/if}}{{/ifGroupNotMe}}
+      </div>
+    </div>
+    
+    <div class="col-25">
+      <div class="tb-col-inner">
+        <div class="buttons edit-mode">
+          {{#ifGroupNotMe _id}}
+            <div class="group">
+              {{#if isEnabled}}
+                <button class="btn warning disable">{{t 'app.disableuser'}}</button>
+              {{else}}
+                <button class="btn action-primary restore">{{t 'app.restoreuser'}}</button>
+              {{/if}}
+              <hr>
+              <button class="btn alert edit-input delete">{{t 'app.deleteuser'}}</button>
+            </div>
+          {{/ifGroupNotMe}}
+        </div>
+      </div>
+    </div>
+</div>

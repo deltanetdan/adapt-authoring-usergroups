@@ -10,6 +10,9 @@
   "peerDependencies": {
     "adapt-authoring-api": "github:adapt-security/adapt-authoring-api",
     "adapt-authoring-core": "github:adapt-security/adapt-authoring-core",
-    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users"
+    "adapt-authoring-users": "github:adapt-security/adapt-authoring-users",
+    "adapt-authoring-content": "github:adapt-security/adapt-authoring-content",
+    "adapt-authoring-assets": "github:adapt-security/adapt-authoring-assets",
+    "adapt-authoring-tags": "github:adapt-security/adapt-authoring-tags"
   }
 }
